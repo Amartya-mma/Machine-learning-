@@ -1,0 +1,17 @@
+>> cd 'E:\notepad++'
+>> ls
+>> data=load('housingdata.dat');
+>> X=[data(:,1) data(:,2) data(:,3)];
+>> y=data(:,4);
+>> theta=BestSuitedTheta(X,y);
+>> theta
+theta =
+
+   131178.36529
+    -8445.70797
+   -13599.57384
+
+>> x=[5 10 20];
+>> val=x*theta
+val =  299443.26992
+>> diary off
